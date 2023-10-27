@@ -1,0 +1,349 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #071b30;
+  overflow-x: hidden;
+}
+.landing-page {
+  position: relative;
+  background-image: url("../bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 100px;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  z-index: 100;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+#cyscomlogo {
+  width: 60px;
+  height: 60px;
+}
+
+#cyscom {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+.play {
+  padding: 5px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.play:hover {
+  background-color: #fce4bc;
+  color: #6e2e3a;
+}
+
+.logo {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 20px;
+}
+.zypherlogo {
+  width: 26vw;
+  height: auto;
+  margin: 0 auto;
+}
+
+.left {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  display: inline-block;
+}
+.savethedate {
+  /* position: absolute;
+  width: 417px;
+  height: 54px;
+  left: 67px;
+  top: 660px; */
+  padding: 40px 5px 5px 60px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.145em;
+  color: #ffffff;
+}
+.date {
+  /* position: absolute;
+  width: 463px;
+  height: 109px;
+  left: 66px;
+  top: 702px; */
+  padding: 5px 5px 5px 60px;
+  font-family: "Kosugi Maru";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2em;
+  /* Text border using text-stroke */
+  -webkit-text-stroke: 2px #6e2e3a; /* For browser compatibility */
+  -webkit-text-fill-color: #fce4bc; /* Make the text transparent to see the border */
+}
+.reg-container {
+  padding-top: 20px;
+  justify-content: center;
+}
+.register {
+  text-decoration: none;
+  /* Adjust the width as needed, relative to its container */
+  max-width: 435px; /* Add a max-width to control the maximum width */
+  margin: 0 auto; /* Center-align the button horizontally */
+  height: 105px;
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center-align the text inside the button */
+  letter-spacing: 0.03em;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  border: 3px solid #507483;
+  border-radius: 38px;
+  -webkit-text-stroke: 3px #507483;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.register:hover {
+  background-color: #507483; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+.main-content {
+  display: flex;
+  padding-top: 60px;
+}
+.right {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.decipher {
+  /* position: absolute;
+  width: 601px;
+  height: 483px;
+  right: 50px;
+  top: 512px; */
+  position: relative;
+  padding: 20px 20px;
+
+  font-family: "League Spartan";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 85px;
+  line-height: 78px;
+  align-items: center;
+  text-align: right;
+  letter-spacing: 0.2em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1130px) {
+  .body {
+    position: relative;
+  }
+  .main-content {
+    display: inline-table;
+  }
+}
+
+@media (max-width: 635px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .home {
+    display: none;
+  }
+  .decipher {
+    font-size: 4.5vw;
+  }
+
+  .navbar-left,
+  .navbar-center,
+  .navbar-right {
+    margin: 10px 0;
+  }
+
+  .nav-link {
+    margin: 5px 0;
+  }
+}
+@media (max-width: 635px) {
+  .register {
+    width: 250px; /* Set a smaller width for the button */
+    height: 75px; /* Set a smaller height for the button */
+    font-size: 20px; /* Adjust the font size */
+    -webkit-text-stroke: 1px #507483;
+  }
+  .home {
+    display: hidden;
+  }
+}
+
+.scroll-down-page {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url("../bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #071b30;
+  min-height: 100vh;
+  display: inline-table;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+.event-desc {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+}
+.event-desc ul {
+  list-style: none; /* Remove the default list style */
+  padding: 0; /* Remove any default padding */
+}
+
+.event-desc ul li {
+  display: -moz-inline-stack; /* Display list items inline */
+  margin-right: 10px; /* Add some spacing between list items */
+}
+
+.event-rules {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+
+  color: #ffffff;
+}
+.event-rules ul {
+  list-style: none; /* Remove the default list style */
+  padding: 0; /* Remove any default padding */
+}
+
+.event-rules ul li {
+  display: -moz-inline-stack; /* Display list items inline */
+}
+.faq {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #ffffff;
+}
+/* Style for FAQ boxes */
+/* Style for FAQ boxes */
+.faq-box {
+  border: 1px solid #ddd;
+  margin: 10px auto;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  max-width: 1000px; /* Adjust the maximum width as needed */
+}
+
+.faq-box .question {
+  background-color: #354443;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Nunito";
+  text-decoration: none;
+  color: #fce4bc;
+}
+
+.faq-box .answer {
+  background-color: #fce4bc;
+  padding: 10px;
+  font-size: 30px;
+  font-family: "Nunito";
+  color: #555;
+}
+
+/* Optional hover effect */
+.faq-box:hover {
+  background-color: #e0e0e0;
+}
+
+.landing-page {
+  background-attachment: fixed;
+}
+.scroll-down-page {
+  background-attachment: fixed;
+}
