@@ -91,11 +91,6 @@ nav {
   display: inline-block;
 }
 .savethedate {
-  /* position: absolute;
-  width: 417px;
-  height: 54px;
-  left: 67px;
-  top: 660px; */
   padding: 40px 5px 5px 60px;
   font-family: "League Spartan";
   font-style: normal;
@@ -108,11 +103,6 @@ nav {
   color: #ffffff;
 }
 .date {
-  /* position: absolute;
-  width: 463px;
-  height: 109px;
-  left: 66px;
-  top: 702px; */
   padding: 5px 5px 5px 60px;
   font-family: "Kosugi Maru";
   font-style: normal;
@@ -122,9 +112,8 @@ nav {
   display: flex;
   align-items: center;
   letter-spacing: 0.2em;
-  /* Text border using text-stroke */
-  -webkit-text-stroke: 2px #6e2e3a; /* For browser compatibility */
-  -webkit-text-fill-color: #fce4bc; /* Make the text transparent to see the border */
+  -webkit-text-stroke: 2px #6e2e3a;
+  -webkit-text-fill-color: #fce4bc;
 }
 .reg-container {
   padding-top: 20px;
@@ -132,9 +121,8 @@ nav {
 }
 .register {
   text-decoration: none;
-  /* Adjust the width as needed, relative to its container */
-  max-width: 435px; /* Add a max-width to control the maximum width */
-  margin: 0 auto; /* Center-align the button horizontally */
+  max-width: 435px;
+  margin: 0 auto;
   height: 105px;
   font-family: "League Spartan";
   font-style: normal;
@@ -143,7 +131,7 @@ nav {
   line-height: 51px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Center-align the text inside the button */
+  justify-content: center;
   letter-spacing: 0.03em;
   padding-right: 15px;
   padding-left: 15px;
@@ -159,8 +147,8 @@ nav {
 }
 
 .register:hover {
-  background-color: #507483; /* Change the background color on hover */
-  color: #fff; /* Change the text color on hover */
+  background-color: #507483;
+  color: #fff;
 }
 .main-content {
   display: flex;
@@ -174,14 +162,8 @@ nav {
 }
 
 .decipher {
-  /* position: absolute;
-  width: 601px;
-  height: 483px;
-  right: 50px;
-  top: 512px; */
   position: relative;
   padding: 20px 20px;
-
   font-family: "League Spartan";
   font-style: normal;
   font-weight: 800;
@@ -190,9 +172,7 @@ nav {
   align-items: center;
   text-align: right;
   letter-spacing: 0.2em;
-
   color: #ffffff;
-
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
     0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -230,19 +210,16 @@ nav {
   .nav-link {
     margin: 5px 0;
   }
-}
-@media (max-width: 635px) {
   .register {
-    width: 250px; /* Set a smaller width for the button */
-    height: 75px; /* Set a smaller height for the button */
-    font-size: 20px; /* Adjust the font size */
+    width: 250px;
+    height: 75px;
+    font-size: 20px;
     -webkit-text-stroke: 1px #507483;
   }
   .home {
     display: hidden;
   }
 }
-
 .scroll-down-page {
   margin: 0;
   padding: 0;
@@ -268,13 +245,12 @@ nav {
   color: #ffffff;
 }
 .event-desc ul {
-  list-style: none; /* Remove the default list style */
-  padding: 0; /* Remove any default padding */
+  list-style: none;
+  padding: 0;
 }
 
 .event-desc ul li {
-  display: -moz-inline-stack; /* Display list items inline */
-  margin-right: 10px; /* Add some spacing between list items */
+  margin-right: 10px;
 }
 
 .event-rules {
@@ -288,12 +264,12 @@ nav {
   color: #ffffff;
 }
 .event-rules ul {
-  list-style: none; /* Remove the default list style */
-  padding: 0; /* Remove any default padding */
+  list-style: none;
+  padding: 0;
 }
 
 .event-rules ul li {
-  display: -moz-inline-stack; /* Display list items inline */
+
 }
 .faq {
   font-family: "Nunito";
@@ -306,8 +282,6 @@ nav {
 
   color: #ffffff;
 }
-/* Style for FAQ boxes */
-/* Style for FAQ boxes */
 .faq-box {
   border: 1px solid #ddd;
   margin: 10px auto;
@@ -315,7 +289,7 @@ nav {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  max-width: 1000px; /* Adjust the maximum width as needed */
+  max-width: 1000px;
 }
 
 .faq-box .question {
@@ -333,10 +307,10 @@ nav {
   padding: 10px;
   font-size: 30px;
   font-family: "Nunito";
+  text-decoration: none;
   color: #555;
 }
 
-/* Optional hover effect */
 .faq-box:hover {
   background-color: #e0e0e0;
 }
